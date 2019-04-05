@@ -28,7 +28,7 @@ public class MessageReceiverController {
 			@RequestParam("timestamp") String timestamp,
 			@RequestParam("nonce") String nonce,
 			@RequestParam("echostr") String echostr) {
-
+		System.out.println("test");
 		return echostr;
 	}
 	
@@ -38,16 +38,16 @@ public class MessageReceiverController {
 			@RequestParam("nonce") String nonce,
 			@RequestBody String xml) 
 	{
-		LOG.debug("收到用户发送给公众号的信息：\n--------------------------------------\n"
-	+"{}\n--------------------------------------\n",xml);
-		
-		String type = xml.substring(0);
-		Class<InMessage> cla = MessageTypeMapper.getClass(type);
-		
-		InMessage inMessage = JAXB.unmarshal(new StringReader(xml), cla);
-		
-		LOG.debug("转换得到的消息对象 \n{}\n",inMessage.toString());
-		
-		return "success";
+			LOG.debug("收到用户发送给公众号的信息: \n-----------------------------------------\n"
+					+ "{}\n-----------------------------------------\n", xml);
+			
+//			String type = xml.substring(0);
+//			Class<InMessage> cla = MessageTypeMapper.getClass(type);
+//			
+//			InMessage inMessage = JAXB.unmarshal(new StringReader(xml), cla);
+//			
+//			LOG.debug("转换得到的消息对象 \n{}\n",inMessage.toString());
+			
+			return "success";
 	}
 }
