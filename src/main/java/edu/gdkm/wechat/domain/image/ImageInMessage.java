@@ -1,4 +1,4 @@
-package edu.gdkm.wechat.domain.Image;
+package edu.gdkm.wechat.domain.image;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

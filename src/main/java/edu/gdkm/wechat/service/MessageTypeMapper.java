@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import edu.gdkm.wechat.domain.InMessage;
-import edu.gdkm.wechat.domain.Image.ImageInMessage;
+import edu.gdkm.wechat.domain.image.ImageInMessage;
 import edu.gdkm.wechat.domain.text.TextInMessage;
 
 public class MessageTypeMapper {

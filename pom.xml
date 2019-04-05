@@ -59,7 +59,6 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<!-- JAXB -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
@@ -75,13 +74,6 @@
 			<version>2.3.2</version>
 		</dependency>
 		
-		<!-- Json -->
-		<!--  
-		<dependency>
-			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
-		</dependency>
-		-->
 	</dependencies>
 
 	<build>
