@@ -1,5 +1,7 @@
 package edu.gdkm.wechat.domain.text;
 
+import java.io.Serializable;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -9,7 +11,8 @@ import edu.gdkm.wechat.domain.InMessage;
 
 @XmlAccessorType(XmlAccessType.FIELD) //JAXB从字段获取配置信息
 @XmlRootElement(name="xml") //JAXB读取XML时根元素名称
-public class TextInMessage extends InMessage {
+public class TextInMessage extends InMessage implements Serializable{
+	private static final long serialVersionUID = 1L;
 	@XmlElement(name="Content")
 	private String content;
 	
